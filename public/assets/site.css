@@ -350,3 +350,12 @@ tbody tr:hover{background:#fcfdfb}
 .due-date.deadline-badge-empty svg{color:#788a7d}
 .deadline-badge-empty .deadline-label{font-weight:500}
 @media(max-width:600px){.homework-card .card-footer,.detail-card .card-footer{gap:12px}.card-footer .teacher{flex-basis:145px}.due-date.deadline-badge{padding:8px 10px}.deadline-value{font-size:14px}}
+
+/* Portfolio demonstration notice shared by all page layouts. */
+.portfolio-notice{margin:0 0 24px;padding:16px 20px;border:1px solid #b8d3c5;border-left:4px solid #28734e;border-radius:10px;background:#edf6f0;color:#244637;overflow-wrap:anywhere}
+.portfolio-notice strong{display:block;font-size:17px;line-height:1.5}
+.portfolio-notice p{margin:6px 0;font-size:15px;line-height:1.6}
+.portfolio-notice a{display:inline-block;padding:5px 0;color:#175c3b;font-size:15px;line-height:1.6;text-decoration:underline;text-underline-offset:3px}
+.portfolio-notice a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media(max-width:520px){.portfolio-notice{padding:14px 16px}}
+@media print{.portfolio-notice{padding:8px 10px;margin-bottom:12px;border:1px solid #555;background:transparent;color:#000;break-inside:avoid}.portfolio-notice strong{font-size:11pt}.portfolio-notice p{font-size:10pt}.portfolio-notice a{display:none}}
