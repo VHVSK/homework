@@ -1,0 +1,16 @@
+/config/config.php
+/storage/*
+!/storage/.htaccess
+!/storage/.gitkeep
+/tests/.runtime/
+/output/
+*.log
+.vscode
+
+# Local outreach materials and deployment secrets
+/outreach/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
