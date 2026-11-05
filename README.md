@@ -140,6 +140,8 @@ For a fresh test database import the schema, then the demo file. If tables alrea
 
 ## Owner, privacy and terms pages
 
+For an always-current SQL demonstration, run the optional daily CLI job described in [cron/README.md](cron/README.md). It refreshes unchanged HW-DEMO-v2 homework dates while preserving IDs and links; no deletion or reimport is needed.
+
 Footer links open `?r=owner`, `?r=privacy` and `?r=terms`. These pages describe the owner, staff data, public assignment fields, cookies, Google sign-in, external services, content rules and requests concerning data. The Ukrainian pages remain in the language of the interface.
 
 Public information is in **`config/site.php`**; private database and OAuth configuration remains in `config/config.php`. The author's personal email and phone are not published. With no contact email configured, the legal pages display a demonstration notice instead of an empty mail link. Before operating a real instance, supply the actual operator's contact details and review the documents.

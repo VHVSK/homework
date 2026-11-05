@@ -28,6 +28,8 @@ Dates are calculated from MySQL CURDATE() when each record is first imported. Pu
 
 ## Reimport behavior
 
+For a continuously current portfolio demo, use the optional [daily date refresh](../cron/README.md) after the initial import. It preserves IDs and content, updates unchanged HW-DEMO-v2 dates and requires no daily deletion or reimport. It intentionally resets deadlines of matching seed entries, while skipping changed titles or bodies.
+
 Only missing records are inserted. There are no UPDATE, DELETE, TRUNCATE, REPLACE, INSERT IGNORE or foreign-key disabling commands. IDs are resolved by queries rather than fixed numeric values.
 
 A school is identified by its representative's reserved email, or by its exact demo address marker if that user is absent. Users are matched by email; classes and subjects by school and name; teaching assignments by teacher, subject and class; homework by assignment and exact title.

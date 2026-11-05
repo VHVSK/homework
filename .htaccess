@@ -2,7 +2,7 @@ Options -Indexes
 DirectoryIndex index.php
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule ^(?:app|config|database|storage|tests)(?:/|$) - [F,L,NC]
+RewriteRule ^(?:app|config|database|storage|tests|cron)(?:/|$) - [F,L,NC]
 RewriteRule ^\.(?:git|env|codex|agents) - [F,L,NC]
 RewriteRule ^(?:README\.md|\.gitignore)$ - [F,L,NC]
 # Both index.php entry points serve the application directly. No public/ redirect is needed.
